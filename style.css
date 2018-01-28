@@ -1,0 +1,205 @@
+@import url("reset.css");
+
+body {
+    text-align: center;
+    line-height: 1.5;
+}
+
+h2 {
+    padding-top: 30px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.b{
+    
+    width: 20%;
+    float: left;
+    margin: 2%;
+}
+
+.b a{
+    color: #bfbfbf;
+    display: block;
+    text-decoration: none;
+}
+
+.conteneur {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#pub1 {
+    position: relative;
+    text-align: center;
+    margin-top: 45px;
+    height: 700px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.pub2 {
+    position: relative;
+    height: 600px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+#pub1 img, .pub2 img {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#header{
+    border: 1px solid black;
+    background-color: black;
+    width: 100%;
+    height: 43px;
+    position: fixed;
+    z-index: 2;
+}
+
+#header li>a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin-left: 10%;
+    float: left;
+    margin-top: 10px;    
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #323232;
+}
+
+#header li a:hover{
+    color:gray;
+    transition: 1s;
+}
+
+#pub1 img {
+    width: 80%;
+    max-width: 981px;
+}
+
+.pub3 {
+    position: relative;
+    height: 600px;
+    background-color: #f9f0eb;
+    margin-bottom: 10px;
+}
+
+.pub3 img {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    max-width: 561px;
+}
+
+.pub4 {
+    display: flex;
+}
+
+.pub4 div {
+    width: 50%;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.pub4 div:first-child {
+    /*background-color: red;*/
+    margin-right: 10px;
+
+}
+
+.pub4 div:nth-child(2) {
+    /*background-color: green;*/
+}
+
+.pub4 img{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+#footer li>a{
+    color: #595959;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    right: 500px;
+    
+}
+
+#footer {
+    height: 450px;
+    background-color: #e6e6e6;
+    position: relative;
+    top: 150px;
+}
+
+@media all and (max-width: 1200px) {
+    .conteneur {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .pub4 {
+        flex-direction: column;
+    }
+    
+    .pub4 div:first-child {
+        margin-right: 0px;
+    }
+    
+    .pub4 div {
+        width: 100%;
+    }
+
+    #header{
+        height: 150px;
+
+    }  
+
+    #header a{
+        position: relative;
+        float: none;
+    }
+
+    h2{
+        position: relative;
+        top: 60px;
+    }
+
+    p{
+        position: relative;
+        top: 60px;
+    }
+
+    .b{
+        float: none;
+        margin: 30%;
+    }  
+
+    #footer{
+        height: 1200px;
+    }
+     
+}
